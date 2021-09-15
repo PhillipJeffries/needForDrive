@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/needfordrive/static/css/main.a617e044.chunk.css",
-    "main.js": "/needfordrive/static/js/main.38cf3f38.chunk.js",
-    "main.js.map": "/needfordrive/static/js/main.38cf3f38.chunk.js.map",
+    "main.css": "/needfordrive/static/css/main.89d2796b.chunk.css",
+    "main.js": "/needfordrive/static/js/main.981049d5.chunk.js",
+    "main.js.map": "/needfordrive/static/js/main.981049d5.chunk.js.map",
     "runtime-main.js": "/needfordrive/static/js/runtime-main.5b3d2e40.js",
     "runtime-main.js.map": "/needfordrive/static/js/runtime-main.5b3d2e40.js.map",
-    "static/js/2.37716484.chunk.js": "/needfordrive/static/js/2.37716484.chunk.js",
-    "static/js/2.37716484.chunk.js.map": "/needfordrive/static/js/2.37716484.chunk.js.map",
+    "static/js/2.ef192202.chunk.js": "/needfordrive/static/js/2.ef192202.chunk.js",
+    "static/js/2.ef192202.chunk.js.map": "/needfordrive/static/js/2.ef192202.chunk.js.map",
     "static/js/3.6b723eb8.chunk.js": "/needfordrive/static/js/3.6b723eb8.chunk.js",
     "static/js/3.6b723eb8.chunk.js.map": "/needfordrive/static/js/3.6b723eb8.chunk.js.map",
     "index.html": "/needfordrive/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/needfordrive/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.37716484.chunk.js.LICENSE.txt": "/needfordrive/static/js/2.37716484.chunk.js.LICENSE.txt",
+    "static/css/main.89d2796b.chunk.css.map": "/needfordrive/static/css/main.89d2796b.chunk.css.map",
+    "static/js/2.ef192202.chunk.js.LICENSE.txt": "/needfordrive/static/js/2.ef192202.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/needfordrive/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.5b3d2e40.js",
-    "static/js/2.37716484.chunk.js",
-    "static/css/main.a617e044.chunk.css",
-    "static/js/main.38cf3f38.chunk.js"
+    "static/js/2.ef192202.chunk.js",
+    "static/css/main.89d2796b.chunk.css",
+    "static/js/main.981049d5.chunk.js"
   ]
 }
