@@ -1,0 +1,65 @@
+@import "../../customize.scss";
+
+.side-menu {
+    width: 64px;
+    @include side-menu-padding;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    box-sizing: border-box;
+    .burger-button{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        box-sizing: border-box;
+        
+        &:hover>div{
+            box-shadow: 0px 0px 3px .5px #FFFFFF;
+        }
+        &:active>div{
+            width: 20px;
+            height: 1px;
+            
+        }
+
+        &>div{
+            width: 24px;
+            height: 3px;
+            background-color: white;
+            border-radius: 3px;
+            transition: width .1s, height .1s, box-shadow .1s;
+        }
+        
+    }
+
+    .eng-button{
+        background-color: transparent;
+        font-family: $font-basic;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 15px;
+        color: $green;
+        border: solid 1px transparent;
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        box-sizing: border-box;
+        transition: border-color .2s, color .1s;
+        &:hover{
+            border: 1px solid white;
+            box-sizing: border-box;
+        }
+        &:active{
+            color: white;
+        }
+    }
+}

@@ -1,15 +1,22 @@
 import './App.scss';
 
+import SideMenu from '../sideMenu/sideMenu';
+import Header from '../header/header';
+import MainSection from '../mainSection/mainSection';
+import Slider from '../slider/slider';
+import Footer from '../footer/footer';
+
 function App() {
   return (
     <div className="page-container">
-      <div className="side-menu"></div>
+      <SideMenu/>
       <div className="page-content container">
-        <header className="header"></header>
-        <section className="content-wrapper"></section>
-        <footer className="footer"></footer>
+        <Header/>
+        <MainSection/>
+        <Footer/>
       </div>
-      <div className="slider"></div>
+      <Slider className="container slider"/>
+      
     </div>
   );
 }

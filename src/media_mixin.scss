@@ -2,14 +2,14 @@
     @media (max-width: 320px) { @content; }
 }
 @mixin tablet {
-    @media (max-width: 768px) { @content; }
+    @media (min-width: 320px) and (max-width: 768px) { @content; }
 }
 @mixin desktop-min {
-    @media (min-width: 1024px) { @content; }
+    @media (min-width: 768px) and (max-width: 1024px) { @content; }
 }
 @mixin desktop {
-    @media (min-width: 1200px) { @content; }
+    @media (min-width: 1024px) and (max-width: 1440px) { @content; }
 }
 @mixin big-desktop {
-    @media (min-width: 1800px) { @content; }
+    @media (min-width: 1440px) { @content; }
 }

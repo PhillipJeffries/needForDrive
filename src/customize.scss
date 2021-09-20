@@ -4,30 +4,36 @@
 
 $font-basic: Roboto;
 
+//colors:
+$green: #0EC261;
+$black: #121212;
+$dark-grey: #999999;
+$light-grey: #EEEEEE;
 
-ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  li{
-    padding: 0;
-  }
-}
+//padding:
+$padding-vert: 40px;
+$padding-hor: 40px;
 
-a{
-  text-decoration: none;
-}
+
 
 
 @mixin container-padding {
+  padding: 32px;
+  @include desktop {
     padding: 32px 64px;
-    @include desktop-min{
-      padding: 32px 32px;
-    }
-    @include tablet {
-      padding: 32px 32px;
-    }
+  }   
+  @include phone {
+    padding: 16px;
+  }
 }
+
+@mixin side-menu-padding {
+  padding: 32px 0;   
+  @include phone {
+    padding: 16px 0;
+  }
+}
+
 
 
 
