@@ -1,3 +1,17 @@
+@import '../../customize.scss';
 .footer{
-    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        span{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 15px;
+            color: $dark-grey;
+        }
+        span:last-child{
+            color: black;
+        }
 }
