@@ -6,12 +6,9 @@
     //align-items: baseline;
         &-title {
             margin: 0;
-            font-family: $font-basic;
-            font-style: normal;
             font-weight: bold;
             font-size: 30px;
             line-height: 35px;
-            color: $green;
         }
         
         .geo-wrapper{
@@ -23,11 +20,8 @@
             margin-right: 7px;
         }
         .geo-text{
-            font-family: $font-basic;
-            font-style: normal;
             font-weight: normal;
             font-size: 14px;
             line-height: 16px;
-            color: $dark-grey;
         }
 }

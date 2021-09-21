@@ -1,0 +1,22 @@
+.custom-button{
+    display: block;
+    min-width: 250px;
+    padding: 11px;
+    background: linear-gradient(90deg, #0EC261 2.61%, #039F67 112.6%);
+    background-blend-mode: darken;
+    border: none;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    transition: filter .2s;
+        &:hover{
+            filter: brightness(90%);
+        }
+        &:active{
+            filter: brightness(80%);
+        }
+}

@@ -1,19 +1,34 @@
 @import './customize.scss';
+
+
+*{
+  font-family: $font-basic;
+  font-style: normal;
+  
+}
+
+
+.green{
+  color: $green;
+}
+
+.grey{
+  color: $dark-grey;
+}
+
+
+
 body {
   margin: 0;
-  font-family: $font-basic, sans-serif;
+  font-family: $font-basic;
   font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 16px;
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h1{
   font-family: $font-basic;
-  font-weight: 700;
-  line-height: 66px;
 }
 
 ul {
