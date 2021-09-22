@@ -1,7 +1,13 @@
 @import "../../customize.scss";
 
+.side-menu-wrapper{
+    display: flex;
+    height: 100vh;
+}
+
 .side-menu {
     width: 64px;
+    height: 100%;
     @include side-menu-padding;
     display: flex;
     flex-direction: column;
@@ -9,67 +15,102 @@
     align-items: center;
     background-color: #151B1F;
     box-sizing: border-box;
-    .burger-button{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        width: 24px;
-        height: 24px;
-        padding: 0;
-        border: none;
-        background-color: transparent;
-        box-sizing: border-box;
-        
-        &:hover>div{
-            box-shadow: 0px 0px 3px .5px #FFFFFF;
-        }
-        &:active>div{
-            width: 20px;
-            height: 1px;
-            
-        }
+    transition: width 1s;
+    
 
-        &>div{
-            width: 24px;
-            height: 3px;
-            background-color: white;
-            border-radius: 3px;
-            transition: width .1s, height .1s, box-shadow .1s;
-        }
-        
-    }
+    
+}
 
+
+
+.menu{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    background: linear-gradient(90.09deg, #111518 47.92%, rgba(17, 21, 24, 0.99) 61.37%, rgba(17, 21, 24, 0.92) 79.7%, rgba(17, 21, 24, 0.8) 99.93%);
+    height: 100%;
+    width: 100%;
+    padding: 40px 24px;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    transition: left .5s;
     .lang-button{
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: transparent;
-        font-family: $font-basic;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 13px;
-        line-height: 15px;
-        color: $green;
-        border: none;
-        transition: border-color .2s, color .1s;
-        box-sizing: border-box;
-            &>div{
-                position: absolute;
-                width:48px;
-                height: 48px;
-                border: 1px solid white;
-                border-radius: 50%;
-                opacity: 0;
-                transition: opacity .2s;
-            }
-            &:hover > div{
-                opacity: 1;
-            }
-            &:active{
-                color: white;
-            }
+        display: none;
+        @include phone{
+            position: absolute;
+            display: flex;
+            bottom: 30px;
+        }
     }
+    &-wrapper{
+        position: absolute;
+        left: 10%;
+        @include phone{
+            top: 20%;
+        }
+    }
+    @include tablet{
+        background:#111518;
+    }
+    @include phone{
+        background:#111518;
+    }
+    &-list{
+        text-align: left;
+        &-item{
+            margin-bottom: 20px;
+            & span{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 37px;
+                color: #FFFFFF;
+                transition: color .5s;
+                @include tablet{
+                    font-size: 28px;
+                    line-height: 32px;
+                }
+                @include phone{
+                    font-size: 22px;
+                    line-height: 26px;
+                }
+            }
+            & span:hover{
+                color: $green;
+            }
+        }
+    }
+    &-social-list{
+        display: flex;
+        margin-top: 32px;
+        &-item{
+            margin-right: 20px;
+            & svg path {
+                transition: fill .5s;
+            }
+            & svg:hover path{
+                fill: $green;
+            }
+        }
+    }
+}
+
+.menu-button-close{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    top: 30px;
+    left: 18px;
+    
+}
+
+
+
+.close{
+    left: -100%;
+    padding: 0;
 }
 

@@ -15,7 +15,7 @@ function App() {
         <MainSection/>
         <Footer/>
       </div>
-      <Slider className="container slider"/>
+      <Slider className="slider container"/>
       
     </div>
   );

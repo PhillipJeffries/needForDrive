@@ -1,0 +1,30 @@
+.burger-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    box-sizing: border-box;
+    
+    &:hover>div{
+        box-shadow: 0px 0px 3px .5px #FFFFFF;
+    }
+    &:active>div{
+        width: 20px;
+        height: 1px;
+        
+    }
+
+    &>div{
+        width: 24px;
+        height: 3px;
+        background-color: white;
+        border-radius: 3px;
+        transition: width .1s, height .1s, box-shadow .1s;
+    }
+    
+}
