@@ -53,4 +53,9 @@ code {
 
 .container {
   @include container-padding;
+  box-sizing: border-box;
+  @include phone {
+    padding: 0;
+    margin: 16px;
+  }
 }

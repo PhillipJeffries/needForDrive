@@ -16,6 +16,17 @@
     background-color: #151B1F;
     box-sizing: border-box;
     transition: width 1s;
+    @include phone {
+        position: absolute;
+        display: block;
+        padding: 20px 20px;
+        background-color: transparent;
+    }
+    &-lang-button{
+        @include phone {
+            display: none;
+        }
+    }
     
 
     
@@ -36,7 +47,7 @@
     left: 0;
     box-sizing: border-box;
     transition: left .5s;
-    .lang-button{
+    &-lang-button{
         display: none;
         @include phone{
             position: absolute;

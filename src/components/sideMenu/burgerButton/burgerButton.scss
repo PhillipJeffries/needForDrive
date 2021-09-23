@@ -1,3 +1,6 @@
+@import '../../../customize.scss';
+
+
 .burger-button{
     display: flex;
     flex-direction: column;
@@ -9,7 +12,10 @@
     border: none;
     background-color: transparent;
     box-sizing: border-box;
-    
+    @include phone{
+        width: 19px;
+        height: 19px;
+    }
     &:hover>div{
         box-shadow: 0px 0px 3px .5px #FFFFFF;
     }
@@ -20,11 +26,14 @@
     }
 
     &>div{
-        width: 24px;
+        width: 100%;
         height: 3px;
         background-color: white;
         border-radius: 3px;
         transition: width .1s, height .1s, box-shadow .1s;
+        @include phone {
+            background-color: #121212;
+        }
     }
     
 }

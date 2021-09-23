@@ -13,7 +13,7 @@ const SideMenu = () => {
         <div className="sideMenu-wrapper">
             <div className="side-menu">
                 <BurgerButton click={()=>setOpenMenu(!openMenu)}/>
-                <LangButton title="Eng"/>
+                <LangButton className="side-menu-lang-button" title="Eng"/>
             </div>
             <div className={openMenu ? "menu open" : "menu close"}>
                 <button className="menu-button-close" onClick={()=>{setOpenMenu(!openMenu)}}>
@@ -64,7 +64,7 @@ const SideMenu = () => {
                     </ul>
                 </div>
                 
-            <LangButton title="Eng"/>
+            <LangButton className="menu-lang-button" title="Eng"/>
 
             </div>
         </div>

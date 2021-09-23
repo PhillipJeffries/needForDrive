@@ -3,6 +3,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include phone {
+        position: relative;
+        width: 100vw;
+        background-color: #151B1F;
+        flex-direction: column-reverse;
+        justify-content: start;
+        align-items: flex-end;
+        margin: -16px;
+        padding: 16px;
+        box-sizing: border-box;
+
+    }
         span{
             font-family: Roboto;
             font-style: normal;
@@ -10,8 +22,16 @@
             font-size: 13px;
             line-height: 15px;
             color: $dark-grey;
+            @include phone {
+                color: #EEEEEE;
+            }
         }
         span:last-child{
             color: black;
+            @include phone {
+                display: block;
+                color: $green;
+                margin-bottom: 8px;
+            }
         }
 }
