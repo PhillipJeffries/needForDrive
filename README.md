@@ -7,4 +7,3 @@ gh-pages, sass
 customize.scss (variables, mixins,)
 
 
-common markup:
