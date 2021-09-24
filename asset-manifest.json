@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/needfordrive/static/css/main.a8e29ec1.chunk.css",
+    "main.css": "/needfordrive/static/css/main.2aaf9ccc.chunk.css",
     "main.js": "/needfordrive/static/js/main.8a5f1731.chunk.js",
     "main.js.map": "/needfordrive/static/js/main.8a5f1731.chunk.js.map",
     "runtime-main.js": "/needfordrive/static/js/runtime-main.31764a27.js",
@@ -10,7 +10,7 @@
     "static/js/3.6de5250e.chunk.js": "/needfordrive/static/js/3.6de5250e.chunk.js",
     "static/js/3.6de5250e.chunk.js.map": "/needfordrive/static/js/3.6de5250e.chunk.js.map",
     "index.html": "/needfordrive/index.html",
-    "static/css/main.a8e29ec1.chunk.css.map": "/needfordrive/static/css/main.a8e29ec1.chunk.css.map",
+    "static/css/main.2aaf9ccc.chunk.css.map": "/needfordrive/static/css/main.2aaf9ccc.chunk.css.map",
     "static/js/2.df40f6cc.chunk.js.LICENSE.txt": "/needfordrive/static/js/2.df40f6cc.chunk.js.LICENSE.txt",
     "static/media/footer.scss": "/needfordrive/static/media/Roboto-Thin.1711b41f.ttf",
     "static/media/slider-back-1.39c0b7d5.png": "/needfordrive/static/media/slider-back-1.39c0b7d5.png",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.31764a27.js",
     "static/js/2.df40f6cc.chunk.js",
-    "static/css/main.a8e29ec1.chunk.css",
+    "static/css/main.2aaf9ccc.chunk.css",
     "static/js/main.8a5f1731.chunk.js"
   ]
 }
