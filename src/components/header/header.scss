@@ -6,6 +6,8 @@
     @include phone{
         flex-wrap: wrap;
         flex-direction: row-reverse;
+        align-self: flex-end;
+        max-width: 250px;
         
     }
     
