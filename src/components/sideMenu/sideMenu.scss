@@ -16,6 +16,9 @@
     background-color: #151B1F;
     box-sizing: border-box;
     transition: width 1s;
+    @include tablet {
+        height: 100vh;
+    }
     @include phone {
         position: absolute;
         display: block;
