@@ -1,3 +1,4 @@
+@import '../../customize.scss';
 
 .page-container {
     position: relative;
@@ -16,10 +17,19 @@
     justify-content: space-between;
     flex: 1;
     box-sizing: border-box;
+}
+
+.order-page-content{
+    flex: 1;
+}
+    
+
+    
+
+    
 
   
 
 
 
-}
 

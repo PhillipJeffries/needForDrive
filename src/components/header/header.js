@@ -1,8 +1,8 @@
 import './header.scss';
 
-const Header = () => {
+const Header = ({className}) => {
     return(
-        <header className="header">
+        <header className={`header ${className}`}>
             <a href="#"><h3 className="header-title green">Need for drive</h3></a>
             <div className="geo-wrapper">
                 <svg className="geo-img" width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -19,11 +19,34 @@ $padding-hor: 40px;
 
 @mixin container-padding {
   padding: 32px;
-  @include desktop {
+  @include big-desktop{
+    padding: 32px 64px;
+  }
+  @include desktop{
     padding: 32px 64px;
   }   
   @include phone {
     padding: 16px;
+  }
+}
+
+@mixin container-padding-hor{
+  padding-left: 32px;
+  padding-right: 32px;
+  @include big-desktop{
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  @include desktop{
+    padding-left: 64px;
+    padding-right: 64px;
+  }   
+  @include tablet{
+    
+  }
+  @include phone {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
