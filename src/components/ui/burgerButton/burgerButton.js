@@ -2,7 +2,7 @@ import './burgerButton.scss';
 
 const BurgerButton = ({click}) => {
     return(
-        <button className="burger-button" onClick={click}>
+        <button className="burger-button pointer" onClick={click}>
             <div></div>
             <div></div>
             <div></div>

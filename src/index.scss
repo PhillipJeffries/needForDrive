@@ -1,10 +1,16 @@
-@import './customize.scss';
+@import './constants/customize.scss';
+
 
 
 *{
+  @include cursor;
   font-family: $font-basic;
   font-style: normal;
   
+}
+
+.pointer{
+  @include pointer;
 }
 
 

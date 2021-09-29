@@ -1,5 +1,5 @@
-@import '../../media_mixin.scss';
-@import "../../customize.scss";
+@import '../../../constants/media_mixin.scss';
+@import "../../../constants/customize.scss";
 
 .slider{
     display: flex;
@@ -26,7 +26,7 @@
     }
     &-button{
         position: absolute;
-        z-index: 50;
+        z-index: 5;
         top: 0;
         width: 64px;
         height: 100%;
@@ -48,14 +48,20 @@
         position: absolute;
         bottom: 32px;
 
-        z-index: 50;
+        z-index: 5;
         &-item{
-            display: block;
+            //display: block;
+            //position: relative;
             width: 8px;
             height: 8px;
             border-radius: 50%;
-            margin: 0 4px;
+            //margin: 0 4px;
             background-color:#EEEEEE;
+            z-index: 10;
+            box-sizing: border-box;
+        }
+        &-item:hover{
+            @include pointer;
         }
         &-item_active{
             background-color: $green;
@@ -124,6 +130,9 @@
     opacity: 0;
     //right: -200%;
     box-sizing: border-box;
+    & *{
+        display: none;
+    }
 }
 
 

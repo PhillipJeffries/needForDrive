@@ -2,8 +2,8 @@ import {useState} from 'react';
 
 import './sideMenu.scss';
 
-import BurgerButton from './burgerButton/burgerButton';
-import LangButton from './langButton/langButton';
+import BurgerButton from '../../ui/burgerButton/burgerButton';
+import LangButton from '../../ui/langButton/langButton';
 
 const SideMenu = () => {
 

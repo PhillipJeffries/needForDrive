@@ -1,6 +1,6 @@
 import './mainSection.scss'
 
-import Button from '../button/button';
+import Button from '../../ui/button/button';
 
 const MainSection = () => {
     return(

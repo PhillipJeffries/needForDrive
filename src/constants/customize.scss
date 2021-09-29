@@ -1,5 +1,6 @@
 @import "./media_mixin.scss";
-@import './fonts/fonts.scss';
+@import '../assets/fonts/fonts.scss';
+
 
 
 $font-basic: Roboto, sans-serif;
@@ -15,6 +16,13 @@ $padding-vert: 40px;
 $padding-hor: 40px;
 
 
+@mixin cursor{
+  cursor: url("../assets/cursors/Cursor.svg"), auto;
+}
+
+@mixin pointer{
+  cursor: url("../assets/cursors/Pointer.svg"), pointer;
+}
 
 
 @mixin container-padding {

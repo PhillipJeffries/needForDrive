@@ -2,12 +2,12 @@ import React, {useState, useEffect} from 'react';
 
 import './slider.scss';
 
-import Button from '../button/button';
+import Button from '../../ui/button/button';
 
-import back1 from '../../img/slider-back-1.png'
-import back2 from '../../img/slider-back-2.png'
-import back3 from '../../img/slider-back-3.jpg'
-import back4 from '../../img/slider-back-4.png'
+import back1 from '../../../assets/img/slider-back-1.png'
+import back2 from '../../../assets/img/slider-back-2.png'
+import back3 from '../../../assets/img/slider-back-3.jpg'
+import back4 from '../../../assets/img/slider-back-4.png'
 
 const sliderData = [
     {
@@ -76,12 +76,12 @@ const Slider = ({className}) => {
     return(
         <div className={className}>
             
-                <button className="slider-button prev-slide" onClick={prevSlide}>
+                <button className="slider-button prev-slide pointer" onClick={prevSlide}>
                     <svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9 1L1 10L9 19" stroke="#EEEEEE" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                 </button>
-                <button className="slider-button next-slide" onClick={nextSlide}>
+                <button className="slider-button next-slide pointer" onClick={nextSlide}>
                     <svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L9 10L1 19" stroke="#EEEEEE" strokeWidth="2" strokeLnecap="round" strokeLinejoin="round"/>
                     </svg>
