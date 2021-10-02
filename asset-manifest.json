@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/needfordrive/static/css/main.3046cd14.chunk.css",
+    "main.css": "/needfordrive/static/css/main.278ffc80.chunk.css",
     "main.js": "/needfordrive/static/js/main.1a1d1b06.chunk.js",
     "main.js.map": "/needfordrive/static/js/main.1a1d1b06.chunk.js.map",
     "runtime-main.js": "/needfordrive/static/js/runtime-main.4ba8e837.js",
@@ -8,7 +8,7 @@
     "static/js/2.d9d1e199.chunk.js": "/needfordrive/static/js/2.d9d1e199.chunk.js",
     "static/js/2.d9d1e199.chunk.js.map": "/needfordrive/static/js/2.d9d1e199.chunk.js.map",
     "index.html": "/needfordrive/index.html",
-    "static/css/main.3046cd14.chunk.css.map": "/needfordrive/static/css/main.3046cd14.chunk.css.map",
+    "static/css/main.278ffc80.chunk.css.map": "/needfordrive/static/css/main.278ffc80.chunk.css.map",
     "static/js/2.d9d1e199.chunk.js.LICENSE.txt": "/needfordrive/static/js/2.d9d1e199.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/needfordrive/static/media/Cursor.63c8eb8b.svg",
     "static/media/slider.scss": "/needfordrive/static/media/Pointer.29cb0949.svg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.4ba8e837.js",
     "static/js/2.d9d1e199.chunk.js",
-    "static/css/main.3046cd14.chunk.css",
+    "static/css/main.278ffc80.chunk.css",
     "static/js/main.1a1d1b06.chunk.js"
   ]
 }
