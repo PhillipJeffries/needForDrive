@@ -17,12 +17,14 @@
     box-sizing: border-box;
     transition: width 1s;
     @include tablet {
+        width: 85px;
         height: 100vh;
     }
     @include phone {
         position: absolute;
         display: block;
-        padding: 20px 20px;
+        width: 0;
+        padding: 8px 16px;
         background-color: transparent;
     }
     &-lang-button{
@@ -42,7 +44,7 @@
     display: flex;
     align-items: center;
     z-index: 100;
-    background: linear-gradient(90.09deg, #111518 47.92%, rgba(17, 21, 24, 0.99) 61.37%, rgba(17, 21, 24, 0.92) 79.7%, rgba(17, 21, 24, 0.8) 99.93%);
+    background: linear-gradient(90.09deg, #111518 0.09%, #111518 54%, rgba(17, 21, 24, 0.92) 61%, rgba(17, 21, 24, 0.81) 99.93%);
     height: 100%;
     width: 100%;
     padding: 40px 24px;
@@ -50,6 +52,9 @@
     left: 0;
     box-sizing: border-box;
     transition: left .5s;
+    @include desktop-min{
+        background: linear-gradient(90.09deg, #111518 0.09%, #111518 64%, rgba(17, 21, 24, 0.92) 69%, rgba(17, 21, 24, 0.81) 99.93%);
+    }
     &-lang-button{
         display: none;
         @include phone{
@@ -63,6 +68,7 @@
         left: 10%;
         @include phone{
             top: 20%;
+            left: 28px;
         }
     }
     @include tablet{
@@ -101,10 +107,14 @@
         margin-top: 32px;
         &-item{
             margin-right: 20px;
+            &:hover *{
+                @include pointer;
+            }
             & svg path {
                 transition: fill .5s;
             }
             & svg:hover path{
+                
                 fill: $green;
             }
         }
@@ -118,6 +128,19 @@
     padding: 0;
     top: 30px;
     left: 18px;
+    @include phone{
+        top: 22px;
+        left: 22px;;
+    }
+    &:hover *{
+        @include pointer;
+    }
+    & svg path{
+        transition: stroke .5s;
+    }
+    & svg:hover path {
+        stroke: $green;
+    }
     
 }
 

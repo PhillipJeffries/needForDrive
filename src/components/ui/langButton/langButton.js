@@ -18,7 +18,7 @@ const LangButton = ({className, title}) => {
     }
 
     return(
-        <div className={`lang-button-wrapper pointer ${className}`} onClick={changeLang}>
+        <div className={`lang-button-wrapper ${className}`} onClick={changeLang}>
             <button className="lang-button" >
                 <div className="lang-button-frame"></div>
                 {Langs[lang].lang}

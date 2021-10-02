@@ -21,7 +21,7 @@ $padding-hor: 40px;
 }
 
 @mixin pointer{
-  cursor: url("../assets/cursors/Pointer.svg"), pointer;
+  cursor: url("../assets/cursors/Pointer.svg") 10 0, pointer;
 }
 
 

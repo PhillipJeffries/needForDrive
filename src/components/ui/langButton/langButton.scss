@@ -26,6 +26,7 @@
         }
         &:hover > div{
             opacity: 1;
+            @include pointer;
         }
         &:active{
             color: white;

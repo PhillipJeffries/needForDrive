@@ -3,9 +3,12 @@ import styles from './button.module.scss';
 const Button = ({className, buttonTitle, style}) => {
     console.log(styles)
     return(
-        <button style={style} className={`${styles.customButton} ${className} pointer`}>
-            {buttonTitle}
-        </button>
+            <button className={`${styles.customButton} ${className}`}>
+                <div style={style} className={styles.bg}></div>
+                {buttonTitle}
+            </button>           
+    
+
     )
 };
 
