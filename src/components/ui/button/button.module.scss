@@ -32,15 +32,20 @@
         background: linear-gradient(90deg, #0EC261 2.61%, #039F67 112.6%);
         background-blend-mode: darken;
         z-index: -1;
+        transition: filter .2s;
     }
     &:hover, &:hover *{
         @include pointer;
     }
-    &:hover{
+    &:hover .bg{
         filter: brightness(90%);
     }
     &:active{
+        transform: translate(-.5px, .5px);
+    }
+    &:active .bg{
         filter: brightness(80%);
+        transition: none;
     }
           
 }
