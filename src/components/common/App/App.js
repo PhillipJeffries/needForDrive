@@ -1,16 +1,16 @@
-import './App.scss';
-
 import SideMenu from '../sideMenu/sideMenu';
 import Header from '../header/header';
 import MainSection from '../mainSection/mainSection';
 import Slider from '../slider/slider';
 import Footer from '../footer/footer';
 
+import styles from './App.module.scss';
+
 function App() {
   return (
-    <div className="page-container">
+    <div className={styles.pageContainer}>
       <SideMenu/>
-      <div className="page-content container">
+      <div className={`${styles.pageContent} container`}>
         <Header/>
         <MainSection/>
         <Footer/>
@@ -22,3 +22,4 @@ function App() {
 }
 
 export default App;
+

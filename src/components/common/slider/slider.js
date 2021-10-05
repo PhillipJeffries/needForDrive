@@ -1,13 +1,13 @@
 import React, {useState, useEffect} from 'react';
 
-import './slider.scss';
-
 import Button from '../../ui/button/button';
 
 import back1 from '../../../assets/img/slider-back-1.png'
 import back2 from '../../../assets/img/slider-back-2.png'
 import back3 from '../../../assets/img/slider-back-3.jpg'
 import back4 from '../../../assets/img/slider-back-4.png'
+
+import './slider.scss';
 
 const sliderData = [
     {

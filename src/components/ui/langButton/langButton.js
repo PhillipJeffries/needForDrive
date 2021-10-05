@@ -1,13 +1,13 @@
-import './langButton.scss';
-
 import {useState} from 'react';
+
+import './langButton.scss';
 
 const Langs = [
     {lang: "Eng"},
     {lang: "Рус"},
     {lang: "Fr"},
     {lang: "Ch"}
-]
+];
 
 const LangButton = ({className, title}) => {
     
