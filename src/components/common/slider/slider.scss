@@ -37,7 +37,11 @@
             max-width: 32px;
         }
         &:hover{
+            @include pointer;
             background: #0ec2624d;
+        }
+        &:hover *{
+            @include pointer;
         }
         &:active{
             background: #0ec26260;
