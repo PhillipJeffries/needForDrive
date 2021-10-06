@@ -1,0 +1,153 @@
+@import "../../../constants/customize.scss";
+
+.side-menu-wrapper{
+    display: flex;
+    height: 100vh;
+}
+
+.side-menu {
+    width: 64px;
+    height: 100%;
+    @include side-menu-padding;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #151B1F;
+    box-sizing: border-box;
+    transition: width 1s;
+    @include tablet {
+        width: 85px;
+        height: 100vh;
+    }
+    @include phone {
+        position: absolute;
+        display: block;
+        width: 0;
+        padding: 8px 16px;
+        background-color: transparent;
+    }
+    &-lang-button{
+        @include phone {
+            display: none;
+        }
+    }
+    
+
+    
+}
+
+
+
+.menu{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    background: linear-gradient(90.09deg, #111518 0.09%, #111518 54%, rgba(17, 21, 24, 0.92) 61%, rgba(17, 21, 24, 0.81) 99.93%);
+    height: 100%;
+    width: 100%;
+    padding: 40px 24px;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    transition: left .5s;
+    @include desktop-min{
+        background: linear-gradient(90.09deg, #111518 0.09%, #111518 64%, rgba(17, 21, 24, 0.92) 69%, rgba(17, 21, 24, 0.81) 99.93%);
+    }
+    &-lang-button{
+        display: none;
+        @include phone{
+            position: absolute;
+            display: flex;
+            bottom: 30px;
+        }
+    }
+    &-wrapper{
+        position: absolute;
+        left: 10%;
+        @include phone{
+            top: 20%;
+            left: 28px;
+        }
+    }
+    @include tablet{
+        background:#111518;
+    }
+    @include phone{
+        background:#111518;
+    }
+    &-list{
+        text-align: left;
+        &-item{
+            margin-bottom: 20px;
+            & span{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 37px;
+                color: #FFFFFF;
+                transition: color .5s;
+                @include tablet{
+                    font-size: 28px;
+                    line-height: 32px;
+                }
+                @include phone{
+                    font-size: 22px;
+                    line-height: 26px;
+                }
+            }
+            & span:hover{
+                color: $green;
+            }
+        }
+    }
+    &-social-list{
+        display: flex;
+        margin-top: 32px;
+        &-item{
+            margin-right: 20px;
+            &:hover *{
+                @include pointer;
+            }
+            & svg path {
+                transition: fill .5s;
+            }
+            & svg:hover path{
+                
+                fill: $green;
+            }
+        }
+    }
+}
+
+.menu-button-close{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    top: 30px;
+    left: 18px;
+    @include phone{
+        top: 22px;
+        left: 22px;;
+    }
+    &:hover *{
+        @include pointer;
+    }
+    & svg path{
+        transition: stroke .5s;
+    }
+    & svg:hover path {
+        stroke: $green;
+    }
+    
+}
+
+
+
+.close{
+    left: -100%;
+    padding: 0;
+}
+

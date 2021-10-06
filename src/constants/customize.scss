@@ -1,0 +1,49 @@
+@import "./media_mixin.scss";
+@import '../assets/fonts/fonts.scss';
+
+
+
+$font-basic: Roboto, sans-serif;
+
+//colors:
+$green: #0EC261;
+$black: #121212;
+$dark-grey: #999999;
+$light-grey: #EEEEEE;
+
+//padding:
+$padding-vert: 40px;
+$padding-hor: 40px;
+
+
+@mixin cursor{
+  cursor: url("../assets/cursors/Cursor.svg"), auto;
+}
+
+@mixin pointer{
+  cursor: url("../assets/cursors/Pointer.svg") 10 0, pointer;
+}
+
+
+@mixin container-padding {
+  padding: 32px;
+  @include desktop {
+    padding: 32px 64px;
+  }   
+  @include phone {
+    padding: 16px;
+  }
+}
+
+@mixin side-menu-padding {
+  padding: 32px 0;   
+  @include phone {
+    padding: 16px 0;
+  }
+}
+
+
+
+
+
+

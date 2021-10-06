@@ -1,0 +1,34 @@
+@import '../../../constants/customize.scss';
+
+.lang-button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    font-family: $font-basic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    color: $green;
+    border: none;
+    transition: border-color .2s, color .1s;
+    box-sizing: border-box;
+        &>div{
+            position: absolute;
+            width:48px;
+            height: 48px;
+            border: 1px solid white;
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity .2s;
+        }
+        &:hover > div{
+            opacity: 1;
+            @include pointer;
+        }
+        &:active{
+            color: white;
+        }
+}
