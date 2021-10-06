@@ -29,6 +29,9 @@
     @include container-padding;
     padding-top: 0;
     padding-bottom: 0;
+    @include phone{
+        padding: 0;
+    }
     .button{
         @include phone{
             width: 100vw;
