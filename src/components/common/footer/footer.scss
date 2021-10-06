@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include container-padding;
     @include phone {
         position: relative;
         width: 100vw;
@@ -10,7 +11,6 @@
         flex-direction: column-reverse;
         justify-content: start;
         align-items: flex-end;
-        margin: -16px;
         padding: 16px;
         box-sizing: border-box;
 
